@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* light gray for readability */
+    color: #222;
+    scroll-behavior: smooth; /* smooth scroll */
+}
+
+header {
+    background-color: #4B0082; /* deep purple */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4B0082; /* purple hover */
+}
+
+/* ---------------- Sections ---------------- */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Alternate section background for readability */
+section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+h2 {
+    color: #4B0082;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* ---------------- Button ---------------- */
+#pledgebtn {
+    background-color: #4B0082; /* purple */
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+#pledgebtn:hover {
+    background-color: #6A0DAD; /* lighter purple on hover */
+    transform: scale(1.05);
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+/* ---------------- Paragraph Styling ---------------- */
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #pledgeBtn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+#about{
+    p{
+        text-align: left;
+    }
+}
+#tips{
+    p{
+        text-align: left;
+    }
+    ul{
+        text-align: left;
+    }
+}
+#action{
+    p{
+        text-align: left;
+    }
+    .bold{
+        text-align: center;
+    }
+}
+#advice{
+    p{
+        text-align: left;
+    }
+}
+#what-is-ogbv{
+    p{
+        text-align: left;
+    }
+}
